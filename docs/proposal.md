@@ -54,4 +54,4 @@ It customizes the trending list for each region to showcase videos that are popu
   - Multiple target variables (Views, Time, and Days)
 
 - **Variables/Columns as features/predictors for ML models:**
-  - (Specify relevant columns)
+  - categoryID, tags, comment_count etc.
