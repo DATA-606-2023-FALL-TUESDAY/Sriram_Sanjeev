@@ -10,7 +10,7 @@
 
 ## What is it about?
 
-The Trending section of YouTube is designed to highlight videos and clips that a variety of people might find intriguing. Videos on YouTube that have the potential to go viral and gather a lot of viewers are called trending videos. This feature is accessible in many nations worldwide and is updated every 15 minutes.
+The Trending section of YouTube is designed to highlight videos and clips that a variety of people might find intriguing. Videos on YouTube that have the potential to go viral and gather a lot of viewers are called trending videos. This feature is accessible in many nations worldwide and is updated every day.
 
 ## Why does it matter?
 
