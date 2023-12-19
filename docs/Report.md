@@ -4,7 +4,7 @@
 - **Prepared for:** UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang
 - **Author Name:** Sanjeev Sriram
 - **Link to the author's GitHub profile:** [sanjeevsriram3k](https://github.com/sanjeevsriram3k)
-- **Link to the author's LinkedIn profile:** [LinkedIn Profile](#)
+- **Link to the author's LinkedIn profile:** [LinkedIn Profile](https://www.linkedin.com/in/sanjeevsriram/)
 
 # 2. Background
 
