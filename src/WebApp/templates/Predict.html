@@ -1,0 +1,181 @@
+{% load static %}
+<html>
+<head>
+<title>YouTube Trending Videos Visualization</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+ <script LANGUAGE="Javascript" >
+
+function validate(){
+	var x=document.forms["f1"]["t1"].value;	
+	var x1=document.forms["f1"]["t2"].value;
+	var x2=document.forms["f1"]["t3"].value;
+	var x3=document.forms["f1"]["t4"].value;
+	var x4=document.forms["f1"]["t5"].value;
+	var x5=document.forms["f1"]["t6"].value;
+	var x6=document.forms["f1"]["t7"].value;
+	var x7=document.forms["f1"]["t8"].value;
+	var x8=document.forms["f1"]["t9"].value;
+	var x9=document.forms["f1"]["t10"].value;
+	var x10=document.forms["f1"]["t11"].value;
+	var x11=document.forms["f1"]["t12"].value;
+	var x12=document.forms["f1"]["t13"].value;
+	var x13=document.forms["f1"]["t14"].value;
+	var x14=document.forms["f1"]["t15"].value;
+	if(x == null || x==""){
+		window.alert("Video ID must be enter");
+		document.f1.t1.focus();
+		return false;
+	}
+	if(x1 == null || x1==""){
+		window.alert("Video title must be enter");
+		document.f1.t2.focus();
+		return false;
+	}
+	if(x2 == null || x2==""){
+		window.alert("Published at must be enter");
+		document.f1.t3.focus();
+		return false;
+	}
+	if(x3 == null || x3==""){
+		window.alert("Channel ID must be enter");
+		document.f1.t4.focus();
+		return false;
+	}
+	if(x4 == null || x4==""){
+		window.alert("Channel title must be enter");
+		document.f1.t5.focus();
+		return false;
+	}
+	if(x5 == null || x5==""){
+		window.alert("Category ID must be enter");
+		document.f1.t6.focus();
+		return false;
+	}
+	if(x6 == null || x6==""){
+		window.alert("Trending date must be enter");
+		document.f1.t7.focus();
+		return false;
+	}
+	if(x7 == null || x7==""){
+		window.alert("Tags must be enter");
+		document.f1.t8.focus();
+		return false;
+	}
+	if(x8 == null || x8==""){
+		window.alert("View count must be enter");
+		document.f1.t9.focus();
+		return false;
+	}
+	if(x9 == null || x9==""){
+		window.alert("Likes must be enter");
+		document.f1.t10.focus();
+		return false;
+	}
+	if(x10 == null || x10==""){
+		window.alert("dislikes must be enter");
+		document.f1.t11.focus();
+		return false;
+	}
+	if(x11 == null || x11==""){
+		window.alert("Thumbnail link must be enter");
+		document.f1.t12.focus();
+		return false;
+	}
+	if(x12 == null || x12==""){
+		window.alert("Comments Disabled must be enter");
+		document.f1.t13.focus();
+		return false;
+	}
+	if(x13 == null || x13==""){
+		window.alert("Ratings Disabled must be enter");
+		document.f1.t14.focus();
+		return false;
+	}
+	if(x14 == null || x14==""){
+		window.alert("Description must be enter");
+		document.f1.t15.focus();
+		return false;
+	}
+	return true;
+}
+		
+	
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="4" color="yellow">YouTube Trending Videos Visualization</font></center>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+		<ul><center>
+	  <li><a href="{% url 'Predict' %}">Youtube Comment Count Prediction</a></li>
+	  <li><a href="{% url 'index' %}">Logout</a></li>		
+		</center></ul>
+<br class="clearfix" />
+				</div>
+			
+	<div id="splash">
+		<img class="pic" src="{% static 'images/investor.jpg' %}" width="870" height="230" alt="" />
+	</div>	
+			<center>
+<form name="f1" method="post" action={% url 'PredictAction' %}  OnSubmit="return validate()">
+	{% csrf_token %}<br/>
+   <h3><b>Input Youtube Video Details Screen</b></h3>
+   
+	<font size="" color="black"><center>{{ data|safe }}</center></font>
+						
+						<table align="center" width="80" >
+			 <tr><td><font size="" color="black">Video&nbsp;ID</b></td><td><input type="text" name="t1" style="font-family: Comic Sans MS" size="30"/></td></tr>
+
+			 <tr><td><font size="" color="black">Video&nbsp;Title</b></td><td><input type="text" name="t2" style="font-family: Comic Sans MS" size="45"/></td></tr>
+
+			  <tr><td><font size="" color="black">Published&nbsp;At</b></td><td><input type="text" name="t3" style="font-family: Comic Sans MS" size="30"/></td></tr>
+
+			   <tr><td><font size="" color="black">Channel&nbsp;ID</b></td><td><input type="text" name="t4" style="font-family: Comic Sans MS" size="30"/></td></tr>
+         
+			 <tr><td><font size="" color="black">Channel&nbsp;Title</b></td><td><input type="text" name="t5" style="font-family: Comic Sans MS" size="45"/></td></tr>
+
+			  <tr><td><font size="" color="black">Category&nbsp;ID</b></td><td><input type="text" name="t6" style="font-family: Comic Sans MS" size="30"/></td></tr>
+
+			   <tr><td><font size="" color="black">Trending&nbsp;Date</b></td><td><input type="text" name="t7" style="font-family: Comic Sans MS" size="30"/></td></tr>
+
+			    <tr><td><font size="" color="black">Tags</b></td><td><input type="text" name="t8" style="font-family: Comic Sans MS" size="30"/></td></tr>
+
+				 <tr><td><font size="" color="black">View&nbsp;Count</b></td><td><input type="text" name="t9" style="font-family: Comic Sans MS" size="20"/></td></tr>
+
+				  <tr><td><font size="" color="black">Likes</b></td><td><input type="text" name="t10" style="font-family: Comic Sans MS" size="20"/></td></tr>
+
+				   <tr><td><font size="" color="black">Dislikes</b></td><td><input type="text" name="t11" style="font-family: Comic Sans MS" size="20"/></td></tr>
+
+				    <tr><td><font size="" color="black">Thumbnail&nbsp;Link</b></td><td><input type="text" name="t12" style="font-family: Comic Sans MS" size="45"/></td></tr>
+
+					 <tr><td><font size="" color="black">Comments&nbsp;Disabled</b></td><td><input type="text" name="t13" style="font-family: Comic Sans MS" size="20"/></td></tr>
+
+					  <tr><td><font size="" color="black">Ratings&nbsp;Disabled</b></td><td><input type="text" name="t14" style="font-family: Comic Sans MS" size="20"/></td></tr>
+
+					   <tr><td><font size="" color="black">Description</b></td><td><input type="text" name="t15" style="font-family: Comic Sans MS" size="45"/></td></tr>
+		 
+		 
+			<tr><td></td><td><input type="submit" value="Submit">
+			</td>
+			</table>
+			<br/><br/><br/><br/>
+				</div>	
+					
+				</div>
+				
+	</body>
+</html>
+
+
+
+
+
+
