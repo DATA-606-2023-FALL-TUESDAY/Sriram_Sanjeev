@@ -3,8 +3,9 @@
 - **Project Title:** YouTube Trending Video Analysis and Predictions
 - **Prepared for:** UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang
 - **Author Name:** Sanjeev Sriram
-- **Link to the author's GitHub profile:** [sanjeevsriram3k](https://github.com/sanjeevsriram3k)
-- **Link to the author's LinkedIn profile:** [LinkedIn Profile](https://www.linkedin.com/in/sanjeevsriram/)
+- **GitHub profile:** [sanjeevsriram3k](https://github.com/sanjeevsriram3k)
+- **LinkedIn profile:** [LinkedIn Profile](https://www.linkedin.com/in/sanjeevsriram/)
+- **Presentation:** [Presentation](https://github.com/DATA-606-2023-FALL-TUESDAY/Sriram_Sanjeev/blob/main/docs/YouTube%20Trending%20Video%20Analysis%20and%20Predictions.pptx)
 
 # 2. Background
 
